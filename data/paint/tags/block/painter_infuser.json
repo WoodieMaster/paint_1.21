@@ -1,0 +1,16 @@
+{
+  "values":[
+	"minecraft:orange_concrete",
+	"minecraft:light_blue_concrete",
+	"minecraft:magenta_concrete",
+	"minecraft:white_concrete",
+  "minecraft:yellow_concrete",
+  "minecraft:green_concrete",
+  "minecraft:oak_log",
+  "minecraft:spruce_log",
+  "minecraft:birch_log",
+  "minecraft:jungle_log",
+  "minecraft:acacia_log",
+  "#paint:lines"
+  ]
+}

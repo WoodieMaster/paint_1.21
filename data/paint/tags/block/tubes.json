@@ -1,0 +1,12 @@
+{
+  "values":[
+	"minecraft:red_stained_glass",
+	"minecraft:cyan_stained_glass",
+	"minecraft:blue_stained_glass",
+	"minecraft:brown_stained_glass",
+  "minecraft:purple_stained_glass",
+
+	"minecraft:stripped_dark_oak_wood",
+	"#paint:valvecorner"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Colored Infuser",
+        "description": "Cubes stick to it! \nPaints Cubes in its color!",
+        "icon": {
+            "id": "minecraft:stripped_spruce_log"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "block1": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "block1"
+        ]
+    ],
+    "parent": "paint:cube/black_infuser"
+}

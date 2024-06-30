@@ -1,0 +1,22 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Paint Encyclopedia",
+        "description": "Helps you to remember everything!",
+        "icon": {
+            "count": 1,
+            "id": "minecraft:book"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [[ "root" ]]
+}

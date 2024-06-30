@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Solid Black Block",
+        "description": "Can be turned into a Colored Paint Block by a Spreader!",
+        "icon": {
+            "id": "minecraft:red_concrete"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "block0": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "block0"
+        ]
+    ],
+    "parent": "paint:root"
+}

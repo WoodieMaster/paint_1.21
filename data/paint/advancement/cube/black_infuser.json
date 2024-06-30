@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Black Infuser",
+        "description": "Cubes stick to it!\nEven on walls!",
+        "icon": {
+            "id": "minecraft:oak_log"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "block1": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "block1"
+        ]
+    ],
+    "parent": "paint:cube/cube"
+}

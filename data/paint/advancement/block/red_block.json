@@ -1,0 +1,25 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": "Solid Red Block",
+        "description": "Don't touch it, you'll die! \nAlso maybe try to shoot it with red paint!",
+        "icon": {
+            "id": "minecraft:cyan_concrete"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "block4": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "block4"
+        ]
+    ],
+    "parent": "paint:block/orange_block"
+}
