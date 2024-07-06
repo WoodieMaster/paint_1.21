@@ -15,14 +15,14 @@ execute as @e[type=shulker,tag=picked] at @s run tag @p[distance=..8,scores={pic
 
 #killing picked cube
 execute as @e[tag=picked,type=!player] at @s run tp @s ~ ~-40 ~
-execute as @e[tag=picked,type=!player] at @s run data merge entity @s {DeathLootTable:""}
+execute as @e[tag=picked,type=!player] at @s run data merge entity @s {DeathLootTable:"minecraft:empty"}
 kill @e[tag=picked,type=!player]
 
 #resetting pick score
 scoreboard players reset @a[scores={pick=1..}] pick
 
 #cube placement item
-item replace entity @a[tag=cube] weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b}]}]
+item replace entity @a[tag=cube] weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"dust_color_transition",amplifier:0,duration:2000000,show_particles:0b}]}]
 
 
 
@@ -64,7 +64,7 @@ execute as @e[tag=cubespawn] at @s align xyz if entity @e[tag=laser,type=shulker
 execute as @e[tag=cubespawn] at @s align xyz if entity @e[tag=laser,type=shulker,dx=0,dy=0,dz=0] run tp @s ~ ~1 ~
 execute as @e[tag=cubespawn] at @s align xyz if entity @e[tag=laser,type=shulker,dx=0,dy=0,dz=0] run tp @s ~ ~1 ~
 
-execute as @e[tag=cubespawn] at @s align xyz if block ~ ~ ~ #paint:cubewhitelist run summon shulker ~0.5 ~ ~0.5 {Tags:["cube","cubesetup"],NoGravity:1b,PersistenceRequired:1,NoAI:1,Silent:1,Team:"knockback",Passengers:[{id:"armor_stand",Tags:["cube","cubestand","cubesetup"],NoAI:1b,Invulnerable:0b,NoGravity:1b,Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:wooden_hoe",Count:1}]}]}
+execute as @e[tag=cubespawn] at @s align xyz if block ~ ~ ~ #paint:cubewhitelist run summon shulker ~0.5 ~ ~0.5 {Tags:["cube","cubesetup"],NoGravity:1b,PersistenceRequired:1b,NoAI:1b,Silent:1b,Team:"knockback",Passengers:[{id:"armor_stand",Tags:["cube","cubestand","cubesetup"],NoAI:1b,Invulnerable:0b,NoGravity:1b,Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:wooden_hoe"}]}]}
 
 execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run scoreboard players set @e place 0
 execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run tag @p add cube

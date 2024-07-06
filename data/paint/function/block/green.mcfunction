@@ -38,7 +38,7 @@ execute as @a[gamemode=!spectator,nbt={OnGround:0b}] at @s positioned ~ ~1 ~-1 i
 
 scoreboard players set @a[scores={lev=2..,sneak=1..}] lev 0
 
-execute as @a[nbt={active_effects:[{Id:8b}]},scores={jump=1..}] at @s run playsound minecraft:contact.green_jump master @a ~ ~ ~ 1 1
+execute as @a[nbt={active_effects:[{id:"minecraft:jump_boost"}]},scores={jump=1..}] at @s run playsound minecraft:contact.green_jump master @a ~ ~ ~ 1 1
 scoreboard players set @a[scores={jump=1..}] jump 0
 
 effect give @a[scores={lev=1..}] minecraft:levitation 1 20 true

@@ -1,1 +1,1 @@
-execute align xyz run summon minecraft:armor_stand ~0.5 ~ ~0.5 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["cleaner"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:green_dye",Count:1b}]}
+execute align xyz run summon minecraft:armor_stand ~0.5 ~ ~0.5 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["cleaner"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:green_dye"}]}

@@ -1,8 +1,8 @@
 #door setup
 scoreboard players set @e[type=armor_stand,tag=door,tag=!fix] locksound 0
 scoreboard players set @e[type=armor_stand,tag=door,tag=!fix] open 0
-execute as @e[type=armor_stand,tag=door,tag=x,tag=!fix] run data merge entity @s {Pose:[],Rotation:[90.0f,0.0f]}
-execute as @e[type=armor_stand,tag=door,tag=z,tag=!fix] run data merge entity @s {Pose:[],Rotation:[0.0f,0.0f]}
+execute as @e[type=armor_stand,tag=door,tag=x,tag=!fix] run data merge entity @s {Pose:{},Rotation:[90.0f,0.0f]}
+execute as @e[type=armor_stand,tag=door,tag=z,tag=!fix] run data merge entity @s {Pose:{},Rotation:[0.0f,0.0f]}
 execute as @e[type=armor_stand,tag=door,tag=x,tag=!fix] at @s run fill ~ ~-1 ~-1 ~ ~1 ~1 minecraft:light_blue_stained_glass_pane replace minecraft:air
 execute as @e[type=armor_stand,tag=door,tag=z,tag=!fix] at @s run fill ~-1 ~-1 ~ ~1 ~1 ~ minecraft:light_blue_stained_glass_pane replace minecraft:air
 execute as @e[type=armor_stand,tag=door,tag=inv,tag=!fix] at @s run tp @s ~ ~1 ~

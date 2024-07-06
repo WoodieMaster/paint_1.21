@@ -204,12 +204,12 @@ item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:oxeye_daisy"}]}
 
 
 #enemies
-item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:red_dye"}]}] weapon.mainhand with minecraft:guardian_spawn_egg[item_name='{"text":"Iris","color":"gold"}',entity_data={NoGravity:1b,NoAI:1b,Invisible:1b,Silent:1b,Tags:["turret"],id:"guardian"}]
+item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:red_dye"}]}] weapon.mainhand with minecraft:guardian_spawn_egg[item_name='{"text":"Iris","color":"gold"}',entity_data={NoGravity:1b,NoAI:1b,Silent:1b,Tags:["turret"],id:"guardian"}]
 item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:guardian_spawn_egg"}]}] weapon.mainhand with minecraft:armor_stand[item_name='{"text":"Cleaner","color":"gold"}',entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["cleaner"],id:"armor_stand"}]
-item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",components:{"minecraft:entity_data":{Tags:["cleaner"]}}}]}] weapon.mainhand with minecraft:guardian_spawn_egg[item_name='{"text":"Iris","color":"gold"}',entity_data={NoGravity:1b,NoAI:1b,Invisible:1b,Silent:1b,Tags:["turret"],id:"guardian"}]
+item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",components:{"minecraft:entity_data":{Tags:["cleaner"]}}}]}] weapon.mainhand with minecraft:guardian_spawn_egg[item_name='{"text":"Iris","color":"gold"}',entity_data={NoGravity:1b,NoAI:1b,Silent:1b,Tags:["turret"],id:"guardian"}]
 
-item replace entity @s[gamemode=creative,scores={menu2=1..}] inventory.6 with minecraft:guardian_spawn_egg[item_name='{"text":"3Y3","color":"gold"}',entity_data={NoGravity:1b,NoAI:1b,Invisible:1b,Silent:1b,Tags:["turret"],id:"guardian"}]
-item replace entity @s[gamemode=creative,scores={menu2=1..}] inventory.7 with minecraft:armor_stand[item_name='{"text":"Cleaner","color":"gold"}',entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["cleaner"],id:"armor_stand"}]
+item replace entity @s[gamemode=creative] inventory.6 with minecraft:guardian_spawn_egg[item_name='{"text":"3Y3","color":"gold"}',entity_data={NoGravity:1b,NoAI:1b,Silent:1b,Tags:["turret"],id:"guardian"}]
+item replace entity @s[gamemode=creative] inventory.7 with minecraft:armor_stand[item_name='{"text":"Cleaner","color":"gold"}',entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["cleaner"],id:"armor_stand"}]
 
 
 #fizzler gate
@@ -346,9 +346,9 @@ item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:vine"}]}] weapo
 
 #dark door
 item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:feather"}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Radio\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["radio"],id:"armor_stand"}]
-item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",tag:{EntityTag:{Tags:["radio"]}}}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Cake\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["cake"],id:"armor_stand"}]
-item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",tag:{EntityTag:{Tags:["cake"]}}}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Screen\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["screen"],id:"armor_stand"}]
-item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",tag:{EntityTag:{Tags:["screen"]}}}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Radio\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["radio"],id:"armor_stand"}]
+item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",components:{"minecraft:entity_data":{EntityTag:{Tags:["radio"]}}}}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Cake\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["cake"],id:"armor_stand"}]
+item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",components:{"minecraft:entity_data":{EntityTag:{Tags:["cake"]}}}}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Screen\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["screen"],id:"armor_stand"}]
+item replace entity @s[nbt={Inventory:[{Slot:-106b,id:"minecraft:armor_stand",components:{"minecraft:entity_data":{Tags:["screen"]}}}]}] weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Radio\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["radio"],id:"armor_stand"}]
 
 item replace entity @s[tag=!cube] weapon.offhand with air
 item replace entity @s[gamemode=creative,nbt={SelectedItemSlot:0,OnGround:1b},tag=!cube,scores={killstand=1..}] weapon.offhand with minecraft:armor_stand[item_name="{\"text\":\"Killstand\",\"color\":\"red\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["killstand"],id:"armor_stand"}]

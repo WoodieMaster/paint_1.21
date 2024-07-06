@@ -16,7 +16,7 @@ tag @a[scores={respawn=1..},tag=mode4] remove mode4
 tag @a[scores={respawn=1..},tag=mode5] remove mode5
 #player1
 execute as @a[team=P1] at @s unless entity @e[type=armor_stand,tag=p1,tag=respawn] run kill @e[type=armor_stand,tag=p1,tag=respawn]
-execute as @a[team=P1] at @s unless entity @e[type=armor_stand,tag=p1,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,PersistanceRequired:1b,Tags:["respawn","p1"]}
+execute as @a[team=P1] at @s unless entity @e[type=armor_stand,tag=p1,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,Tags:["respawn","p1"]}
 execute as @a[team=P1] at @s if block ~ ~ ~ dark_oak_pressure_plate run tp @e[type=armor_stand,tag=respawn,tag=p1] @s
 execute as @a[team=P1] at @s if block ~ ~ ~ dark_oak_pressure_plate run data merge entity @e[tag=respawn,tag=p1,limit=1] {Tags:["p1","respawn"]}
 execute as @a[team=P1,tag=mode1] at @s if block ~ ~ ~ dark_oak_pressure_plate run tag @e[type=armor_stand,tag=respawn,tag=p1] add mode1
@@ -33,7 +33,7 @@ execute as @e[type=armor_stand,tag=respawn,tag=p1,tag=mode4] at @s run tag @a[sc
 
 #player2
 execute as @a[team=P2] at @s unless entity @e[type=armor_stand,tag=p2,tag=respawn] run kill @e[type=armor_stand,tag=p2,tag=respawn]
-execute as @a[team=P2] at @s unless entity @e[type=armor_stand,tag=p2,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,PersistanceRequired:1b,Tags:["respawn","p2"]}
+execute as @a[team=P2] at @s unless entity @e[type=armor_stand,tag=p2,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,Tags:["respawn","p2"]}
 execute as @a[team=P2] at @s if block ~ ~ ~ dark_oak_pressure_plate run tp @e[type=armor_stand,tag=respawn,tag=p2] @s
 execute as @a[team=P2] at @s if block ~ ~ ~ dark_oak_pressure_plate run data merge entity @e[tag=respawn,tag=p2,limit=1] {Tags:["p2","respawn"]}
 execute as @a[team=P2,tag=mode1] at @s if block ~ ~ ~ dark_oak_pressure_plate run tag @e[type=armor_stand,tag=respawn,tag=p2] add mode1
@@ -50,7 +50,7 @@ execute as @e[type=armor_stand,tag=respawn,tag=p2,tag=mode4] at @s run tag @a[sc
 
 #player3
 execute as @a[team=P3] at @s unless entity @e[type=armor_stand,tag=p3,tag=respawn] run kill @e[type=armor_stand,tag=p2,tag=respawn]
-execute as @a[team=P3] at @s unless entity @e[type=armor_stand,tag=p3,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,PersistanceRequired:1b,Tags:["respawn","p3"]}
+execute as @a[team=P3] at @s unless entity @e[type=armor_stand,tag=p3,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,Tags:["respawn","p3"]}
 execute as @a[team=P3] at @s if block ~ ~ ~ dark_oak_pressure_plate run tp @e[type=armor_stand,tag=respawn,tag=p3] @s
 execute as @a[team=P3] at @s if block ~ ~ ~ dark_oak_pressure_plate run data merge entity @e[tag=respawn,tag=p3,limit=1] {Tags:["p3","respawn"]}
 execute as @a[team=P3,tag=mode1] at @s if block ~ ~ ~ dark_oak_pressure_plate run tag @e[type=armor_stand,tag=respawn,tag=p3] add mode1
@@ -67,7 +67,7 @@ execute as @e[type=armor_stand,tag=respawn,tag=p3,tag=mode4] at @s run tag @a[sc
 
 #player4
 execute as @a[team=P4] at @s unless entity @e[type=armor_stand,tag=p4,tag=respawn] run kill @e[type=armor_stand,tag=p4,tag=respawn]
-execute as @a[team=P4] at @s unless entity @e[type=armor_stand,tag=p4,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,PersistanceRequired:1b,Tags:["respawn","p4"]}
+execute as @a[team=P4] at @s unless entity @e[type=armor_stand,tag=p4,tag=respawn] run summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Invulnerable:1b,Tags:["respawn","p4"]}
 execute as @a[team=P4] at @s if block ~ ~ ~ dark_oak_pressure_plate run tp @e[type=armor_stand,tag=respawn,tag=p4] @s
 execute as @a[team=P4] at @s if block ~ ~ ~ dark_oak_pressure_plate run data merge entity @e[tag=respawn,tag=p4,limit=1] {Tags:["p4","respawn"]}
 execute as @a[team=P4,tag=mode1] at @s if block ~ ~ ~ dark_oak_pressure_plate run tag @e[type=armor_stand,tag=respawn,tag=p4] add mode1
