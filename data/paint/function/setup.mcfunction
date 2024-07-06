@@ -43,7 +43,6 @@ scoreboard objectives add color dummy
 
 scoreboard objectives add purple_wallrun dummy
 
-scoreboard objectives add nofall dummy
 scoreboard objectives add fall dummy
 scoreboard objectives add mirror dummy
 scoreboard objectives add bounce dummy
@@ -135,6 +134,7 @@ gamerule logAdminCommands false
 gamerule mobGriefing false
 gamerule showDeathMessages false
 gamerule spawnRadius 0
+gamerule fallDamage false
 
 #player teams
 team add P1 {"text":"P1","color":"blue"}
@@ -151,3 +151,4 @@ team modify P1 prefix [{"text":"P1","color":"blue"},{"text":"| ","color":"gray"}
 team modify P2 prefix [{"text":"P2","color":"dark_green"},{"text":"| ","color":"gray"}]
 team modify P3 prefix [{"text":"P3","color":"red"},{"text":"| ","color":"gray"}]
 team modify P4 prefix [{"text":"P4","color":"yellow"},{"text":"| ","color":"gray"}]
+

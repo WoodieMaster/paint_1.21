@@ -1,6 +1,3 @@
-execute as @a[scores={relog=1..}] run function paint:setup
-scoreboard players set @a[scores={relog=1..}] relog 0
-
 function paint:player/particles
 function paint:player/interface
 function paint:player/respawn
@@ -35,8 +32,6 @@ function paint:mechanics/decorational
 
 
 function paint:mechanics/musicloop
-
-execute as @a[gamemode=adventure] at @s run function paint:player/nofall
 
 
 function paint:gun/pots
