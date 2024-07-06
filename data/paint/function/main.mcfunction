@@ -30,7 +30,6 @@ function paint:bluestone/tubes
 
 function paint:bluestone/cube_spawner
 
-function paint:mechanics/elevator
 function paint:mechanics/decorational
 
 

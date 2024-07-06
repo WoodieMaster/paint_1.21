@@ -98,15 +98,6 @@ execute as @a[gamemode=adventure] at @s if block ~ ~1 ~0.5 #paint:respawn run sc
 execute as @a[gamemode=adventure,nbt={OnGround:1b}] at @s if block ~ ~ ~ dead_bubble_coral run playsound respawn.spike master @a ~ ~ ~ 1 1 1
 execute as @a[gamemode=adventure,nbt={OnGround:1b}] at @s if block ~ ~ ~ dead_bubble_coral run scoreboard players set @s respawn 4
 
-execute as @a[gamemode=adventure] at @s if block ~ ~-1 ~ pink_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~1 ~-1 ~ pink_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~ ~-1 ~1 pink_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~-1 ~-1 ~ pink_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~ ~-1 ~-1 pink_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~ ~1 ~ white_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~ ~2 ~ white_concrete run scoreboard players set @s respawn 4
-execute as @a[gamemode=adventure] at @s if block ~ ~3 ~ white_concrete run scoreboard players set @s respawn 4
-
 execute as @a[gamemode=adventure] at @s if block ~ ~-1 ~ bedrock run scoreboard players set @s respawn 4
 execute as @a[gamemode=adventure] at @s if block ~ ~-2 ~ bedrock run scoreboard players set @s respawn 4
 execute as @a[gamemode=adventure] at @s if block ~ ~-3 ~ bedrock run scoreboard players set @s respawn 4
