@@ -22,9 +22,7 @@ kill @e[tag=picked,type=!player]
 scoreboard players reset @a[scores={pick=1..}] pick
 
 #cube placement item
-item replace entity @a[tag=cube] weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"dust_color_transition",amplifier:0,duration:2000000,show_particles:0b}]}]
-
-
+item replace entity @a[tag=cube] weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"invisibility",amplifier:0,duration:2000000,show_particles:0b}]}]
 
 #TODO
 #laser blocks pushing other cubes
