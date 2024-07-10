@@ -30,12 +30,3 @@ item replace entity @s inventory.23 with minecraft:redstone_lamp
 item replace entity @s inventory.24 with minecraft:orange_tulip
 item replace entity @s inventory.25 with minecraft:oak_button
 item replace entity @s inventory.26 with minecraft:feather[item_name="{\"text\":\"Decoration\",\"color\":\"gold\"}"]
-
-execute as @e[tag=killstand] at @s run particle minecraft:dragon_breath ~ ~0.5 ~ 0.1 0.1 0.1 0.1 20
-execute as @e[tag=killstand] at @s as @e[distance=..3,type=!player] at @s run setblock ~ ~ ~ air destroy
-execute as @e[tag=killstand] at @s as @e[distance=..3,type=!player,tag=door] at @s run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 air replace blue_stained_glass_pane
-execute as @e[tag=killstand] at @s as @e[distance=..3,type=!player,tag=door] at @s run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 air replace light_blue_stained_glass_pane
-execute as @e[tag=killstand] at @s as @e[distance=..3,type=!player,tag=fizzlerdoor] at @s run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 air replace tripwire
-execute as @e[tag=killstand] at @s run kill @e[distance=..3,type=!player]
-
-execute if entity @s[tag=cube] run item replace entity @s weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"invisibility",amplifier:0,duration:2000000,show_particles:0b}]}]

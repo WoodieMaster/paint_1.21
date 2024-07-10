@@ -7,4 +7,6 @@ function paint:gun/inv
 
 item replace entity @s weapon.offhand with air
 
-advancement revoke @s only paint:_trigger_/revoke_inventory_changed
+execute if entity @s[tag=cube] run item replace entity @s weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"invisibility",amplifier:0,duration:2000000,show_particles:0b}]}]
+
+schedule function paint:_trigger_/inventory_changed_tick 1t

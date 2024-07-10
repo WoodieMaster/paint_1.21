@@ -11,7 +11,7 @@ execute as @a[tag=!cube,scores={pick=1..}] at @s as @e[type=shulker,nbt={HurtTim
 execute as @a[scores={pick=1..},tag=!cube] at @s if entity @e[tag=cube,tag=picked,distance=..8] run playsound cube.pickup block @a ~ ~ ~ 2 1.2
 
 execute as @e[type=shulker,tag=picked] at @s run scoreboard players operation @p[scores={pick=1..},tag=!cube] color = @s color
-execute as @e[type=shulker,tag=picked] at @s run tag @p[distance=..8,scores={pick=1..},tag=!cube] add cube
+execute as @e[type=shulker,tag=picked] at @s as @p[distance=..8,scores={pick=1..},tag=!cube] run function paint:player/give_cube
 
 #killing picked cube
 execute as @e[tag=picked,type=!player] at @s run tp @s ~ ~-40 ~
@@ -62,7 +62,7 @@ execute as @e[tag=cubespawn] at @s align xyz if entity @e[tag=laser,type=shulker
 execute as @e[tag=cubespawn] at @s align xyz if block ~ ~ ~ #paint:cubewhitelist run summon shulker ~0.5 ~ ~0.5 {Tags:["cube","cubesetup"],NoGravity:1b,PersistenceRequired:1b,NoAI:1b,Silent:1b,Team:"knockback",Passengers:[{id:"armor_stand",Tags:["cube","cubestand","cubesetup"],NoAI:1b,Invulnerable:0b,NoGravity:1b,Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:wooden_hoe"}]}]}
 
 execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run scoreboard players set @e place 0
-execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run tag @p add cube
+execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist as @p run function paint:player/give_cube
 execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run tp @s ~ ~-10 ~
 execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run playsound minecraft:cube.meh master @a ~ ~ ~ 1 1.3
 execute as @e[tag=cubespawn] at @s unless block ~ ~ ~ #paint:cubewhitelist run kill @s
@@ -96,7 +96,7 @@ execute as @a[tag=cube] at @s if block ~ ~ ~ #paint:cube_remove run scoreboard p
 execute as @a[tag=cube] at @s if block ~ ~ ~ #paint:cube_remove run playsound cube.complain master @a ~ ~ ~ 10 1 1
 
 #placing a cube
-tag @a[scores={place=1..}] remove cube
+execute as @a[scores={place=1..}] run function paint:player/clear_cube
 execute as @a[scores={place=1..}] at @s run playsound cube.place block @a ~ ~ ~ 1 1
 item replace entity @s[tag=!cube] weapon.offhand with air
 scoreboard players reset @a[tag=!cube] color

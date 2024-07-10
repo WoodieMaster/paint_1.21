@@ -22,7 +22,8 @@ execute as @e[tag=valve,tag=!setup] at @s run gamemode spectator @p[tag=!cube,sc
 execute as @a[scores={valve=1..},tag=cube] at @s run scoreboard players operation @e[tag=valve,tag=!setup] color = @s color
 execute as @a[scores={valve=1..},tag=cube] at @s run tag @e[tag=valve,tag=!setup] add valve_cube
 scoreboard players reset @a[scores={valve=1..},tag=cube] color
-tag @a[scores={valve=1..},tag=cube] remove cube
+
+execute as @a[scores={valve=1..},tag=cube] run function paint:player/clear_cube
 
 execute as @e[tag=valve,tag=!setup,tag=valve_cube] at @s run playsound minecraft:tube_enter master @a ~ ~ ~ 1 1
 item replace entity @e[tag=valve_cube,type=armor_stand,tag=!setup] armor.head with minecraft:golden_axe

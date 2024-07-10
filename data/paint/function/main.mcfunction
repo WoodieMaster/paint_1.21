@@ -39,6 +39,10 @@ execute as @e[tag=!setup,tag=spread,tag=solid] at @s run function paint:gun/spre
 
 
 execute as @a at @s anchored eyes run function paint:gun/main
+
+execute as @a[tag=!killstandmode,gamemode=creative,predicate=paint:sneaking,nbt={SelectedItemSlot:0,OnGround:1b}] run tag @s add killstandmode
+execute as @a[tag=killstandmode] run function paint:player/killstand
+
 execute as @e[type=area_effect_cloud,tag=paint] at @s run function paint:gun/collision
 
 function paint:bluestone/cubes

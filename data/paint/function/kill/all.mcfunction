@@ -20,7 +20,7 @@ kill @e[tag=cleaner]
 
 kill @e[type=armor_stand,tag=cube]
 kill @e[type=shulker,tag=cube]
-tag @a remove cube
+execute as @a run function paint:player/clear_cube
 
 execute as @e[tag=pr] at @s run fill ~-5 ~-5 ~-5 ~5 ~6 ~5 stone replace #paint:paintable
 kill @e[tag=pr]

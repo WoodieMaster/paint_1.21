@@ -1,4 +1,4 @@
-execute if entity @s[gamemode=!creative] run clear @s carrot_on_a_stick
+clear @s carrot_on_a_stick
 
 execute if score @s[tag=mode5] upgrade matches 61.. run return run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[item_name='{"text":"","color":"dark_purple"}',damage=5,unbreakable={}]
 execute if score @s upgrade matches 1..60 run item replace entity @s hotbar.0 with minecraft:carrot_on_a_stick[item_name='{"text":"","obfuscated":true}',damage=6,unbreakable={}]
