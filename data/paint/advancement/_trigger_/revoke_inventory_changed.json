@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"a": {
+			"trigger": "tick"
+		}
+	},
+	"rewards": {
+		"function": "paint:_trigger_/revoke_inventory_changed"
+	}
+}

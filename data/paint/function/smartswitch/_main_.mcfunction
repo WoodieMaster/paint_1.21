@@ -4,14 +4,23 @@ execute if items entity @s weapon.offhand armor_stand run return run function pa
 #colored solid blocks
 execute if items entity @s weapon.offhand #paint:smartswitch/colored_solid_blocks run return run function paint:smartswitch/colored_solid_blocks
 
+#colored solid block #grayscale
+execute if items entity @s weapon.offhand #paint:smartswitch/colored_solid_blocks run return run function paint:smartswitch/colored_solid_blocks
+
 #Command Blocks
 execute if items entity @s weapon.offhand #paint:smartswitch/command_blocks run return run function paint:smartswitch/command_blocks
 
 #Extender
 execute if items entity @s weapon.offhand #paint:smartswitch/extender run return run function paint:smartswitch/extender
 
+#Extender #grayscale
+execute if items entity @s weapon.offhand #paint:smartswitch/colored_solid_blocks run return run function paint:smartswitch/colored_solid_blocks
+
 #spreader
 execute if items entity @s weapon.offhand #paint:smartswitch/spreader run return run function paint:smartswitch/spreader
+
+#spreader #grayscale
+execute if items entity @s weapon.offhand #paint:smartswitch/colored_solid_blocks run return run function paint:smartswitch/colored_solid_blocks
 
 #valves
 execute if items entity @s weapon.offhand #paint:smartswitch/valves run return run function paint:smartswitch/valves
@@ -42,6 +51,9 @@ execute if items entity @s weapon.offhand #paint:smartswitch/detector run return
 
 #slabs
 execute if items entity @s weapon.offhand #paint:smartswitch/slabs run return run function paint:smartswitch/slabs
+
+#dark slabs
+execute if items entity @s weapon.offhand #paint:smartswitch/dark_slabs run return run function paint:smartswitch/dark_slabs
 
 #cube respawn points
 execute if items entity @s weapon.offhand #paint:smartswitch/cube_respawn run return run function paint:smartswitch/cube_respawn
@@ -75,6 +87,3 @@ execute if items entity @s weapon.offhand #paint:smartswitch/tall_flowers run re
 
 #decoration
 execute if items entity @s weapon.offhand minecraft:feather run return run item replace entity @s weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Radio\",\"color\":\"gold\"}",custom_data={id:"radio"},entity_data={id:"armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["radio"]}]
-
-#other
-item replace entity @s weapon.mainhand from entity @s weapon.offhand
