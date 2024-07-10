@@ -43,6 +43,7 @@ execute if items entity @s weapon.offhand #paint:smartswitch/detector run return
 #slabs
 execute if items entity @s weapon.offhand #paint:smartswitch/slabs run return run function paint:smartswitch/slabs
 
+
 #cube respawn points
 execute if items entity @s weapon.offhand #paint:smartswitch/cube_respawn run return run function paint:smartswitch/cube_respawn
 
