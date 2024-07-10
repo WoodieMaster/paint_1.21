@@ -1,0 +1,5 @@
+execute if items entity @s weapon.offhand minecraft:oak_pressure_plate run return run item replace entity @s weapon.mainhand with minecraft:spruce_pressure_plate
+execute if items entity @s weapon.offhand minecraft:spruce_pressure_plate run return run item replace entity @s weapon.mainhand with minecraft:birch_pressure_plate
+execute if items entity @s weapon.offhand minecraft:birch_pressure_plate run return run item replace entity @s weapon.mainhand with minecraft:jungle_pressure_plate
+execute if items entity @s weapon.offhand minecraft:jungle_pressure_plate run return run item replace entity @s weapon.mainhand with minecraft:acacia_pressure_plate
+execute if items entity @s weapon.offhand minecraft:acacia_pressure_plate run return run item replace entity @s weapon.mainhand with minecraft:oak_pressure_plate

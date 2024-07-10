@@ -21,9 +21,6 @@ kill @e[tag=picked,type=!player]
 #resetting pick score
 scoreboard players reset @a[scores={pick=1..}] pick
 
-#cube placement item
-item replace entity @a[tag=cube] weapon.offhand with minecraft:chicken_spawn_egg[can_place_on={blocks:"#paint:cube_can_place_on"},entity_data={id:"minecraft:chicken",Tags:["cubespawn"],Silent:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"invisibility",amplifier:0,duration:2000000,show_particles:0b}]}]
-
 #TODO
 #laser blocks pushing other cubes
 execute as @e[type=shulker,tag=laser] at @s align xyz if entity @e[type=shulker,tag=cube,dx=0,dy=0,dz=0] as @e[type=shulker,tag=cube,dx=0,dy=10,dz=0] at @s run tp @s ~ ~1 ~
@@ -99,12 +96,10 @@ execute as @a[tag=cube] at @s if block ~ ~ ~ #paint:cube_remove run scoreboard p
 execute as @a[tag=cube] at @s if block ~ ~ ~ #paint:cube_remove run playsound cube.complain master @a ~ ~ ~ 10 1 1
 
 #placing a cube
-execute as @a[scores={place=1..}] at @s run playsound cube.place block @a ~ ~ ~ 1 1
-clear @a[scores={place=1..}] minecraft:chicken_spawn_egg
-scoreboard players set @a[scores={place=1..}] color 0
-scoreboard players reset @a[tag=!cube] color
-clear @a[tag=!cube,gamemode=adventure] minecraft:chicken_spawn_egg
 tag @a[scores={place=1..}] remove cube
+execute as @a[scores={place=1..}] at @s run playsound cube.place block @a ~ ~ ~ 1 1
+item replace entity @s[tag=!cube] weapon.offhand with air
+scoreboard players reset @a[tag=!cube] color
 scoreboard players reset @a[scores={place=1..}] place
 
 #blocks lethal for cubes

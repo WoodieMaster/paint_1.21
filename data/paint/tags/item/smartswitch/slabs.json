@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:smooth_stone_slab",
+        "minecraft:sandstone_slab",
+        "minecraft:brick_slab",
+        "minecraft:stone_brick_slab",
+        "minecraft:quartz_slab",
+        "minecraft:red_sandstone_slab",
+        "minecraft:purpur_slab"
+    ]
+}

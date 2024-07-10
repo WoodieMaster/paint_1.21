@@ -1,0 +1,2 @@
+execute if items entity @s weapon.offhand minecraft:dark_oak_log run return run item replace entity @s weapon.mainhand with minecraft:stripped_dark_oak_log
+execute if items entity @s weapon.offhand minecraft:stripped_dark_oak_log run return run item replace entity @s weapon.mainhand with minecraft:dark_oak_log

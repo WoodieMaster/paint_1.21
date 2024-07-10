@@ -29,10 +29,7 @@ function paint:bluestone/cube_spawner
 
 function paint:mechanics/decorational
 
-
-
 function paint:mechanics/musicloop
-
 
 function paint:gun/pots
 function paint:gun/bucket
@@ -52,9 +49,6 @@ execute if entity @e[tag=cleaner,limit=1] as @e[tag=cleaner] at @s run function 
 
 execute as @a[gamemode=adventure] at @s if entity @e[tag=turret,distance=..24] run function paint:enemy/turret
 function paint:enemy/turret_spotting
-
-execute if entity @a[gamemode=creative,limit=1] as @a[gamemode=creative] run function paint:menu
-execute if entity @a[gamemode=creative,limit=1] as @a[gamemode=creative] run function paint:smartswitch
 
 kill @e[type=item]
 

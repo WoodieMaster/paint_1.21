@@ -1,0 +1,3 @@
+execute if items entity @s weapon.offhand minecraft:command_block run return run item replace entity @s weapon.mainhand with minecraft:chain_command_block
+execute if items entity @s weapon.offhand minecraft:chain_command_block run return run item replace entity @s weapon.mainhand with minecraft:repeating_command_block
+execute if items entity @s weapon.offhand minecraft:repeating_command_block run return run item replace entity @s weapon.mainhand with minecraft:command_block

@@ -1,0 +1,10 @@
+{
+    "values": [
+        "minecraft:diamond_ore",
+        "minecraft:redstone",
+        "minecraft:redstone_torch",
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "minecraft:lever"
+    ]
+}

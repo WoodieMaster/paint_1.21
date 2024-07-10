@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"a": {
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"rewards": {
+		"function": "paint:_trigger_/inventory_changed"
+	}
+}

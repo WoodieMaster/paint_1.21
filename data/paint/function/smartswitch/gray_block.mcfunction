@@ -1,0 +1,4 @@
+execute if items entity @s weapon.offhand minecraft:mossy_stone_brick_wall run return run item replace entity @s weapon.mainhand with minecraft:mossy_stone_bricks
+execute if items entity @s weapon.offhand minecraft:mossy_stone_bricks run return run item replace entity @s weapon.mainhand with minecraft:mossy_stone_brick_stairs
+execute if items entity @s weapon.offhand minecraft:mossy_stone_brick_stairs run return run item replace entity @s weapon.mainhand with minecraft:mossy_stone_brick_slab
+execute if items entity @s weapon.offhand minecraft:mossy_stone_brick_slab run return run item replace entity @s weapon.mainhand with minecraft:mossy_stone_brick_wall
