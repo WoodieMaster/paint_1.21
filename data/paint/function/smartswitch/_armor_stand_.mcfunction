@@ -32,3 +32,6 @@ execute if items entity @s weapon.offhand minecraft:armor_stand[custom_data={id:
 execute if items entity @s weapon.offhand minecraft:armor_stand[custom_data={id:"receiver",type:"e"}] run return run item replace entity @s weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Transmitter [F]\",\"color\":\"aqua\"}",custom_data={id:"transmitter",type:"f"},entity_data={id:"armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["transmitter","f"]}]
 execute if items entity @s weapon.offhand minecraft:armor_stand[custom_data={id:"transmitter",type:"f"}] run return run item replace entity @s weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Receiver [F]\",\"color\":\"aqua\"}",custom_data={id:"receiver",type:"f"},entity_data={id:"armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["receiver","f"]}]
 execute if items entity @s weapon.offhand minecraft:armor_stand[custom_data={id:"receiver",type:"f"}] run return run item replace entity @s weapon.mainhand with minecraft:armor_stand[item_name="{\"text\":\"Transmitter [A]\",\"color\":\"aqua\"}",custom_data={id:"transmitter",type:"a"},entity_data={id:"armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["transmitter","a"]}]
+
+
+item replace entity @s weapon.mainhand from entity @s weapon.offhand

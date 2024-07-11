@@ -1,5 +1,3 @@
-#door setup
-scoreboard players set @e[type=armor_stand,tag=elevator,tag=!fix] elevator 80
 
 
 execute as @e[type=armor_stand,tag=elevator,tag=!fix,tag=x] run say hallo ich bin ein Fahrstuhl! X

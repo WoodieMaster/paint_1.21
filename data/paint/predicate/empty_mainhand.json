@@ -1,0 +1,32 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"slots": {
+					"weapon.mainhand": {
+						"items": "minecraft:chicken_spawn_egg"
+					}
+				}
+			}
+		},
+		{
+			"condition": "inverted",
+			"term": {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"slots": {
+						"weapon.mainhand": {
+							"count": {
+								"min": 1
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

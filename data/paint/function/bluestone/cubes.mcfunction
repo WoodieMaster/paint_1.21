@@ -84,7 +84,6 @@ item replace entity @e[tag=cube,type=armor_stand,scores={color=4}] armor.head wi
 
 tag @e[tag=cubesetup] remove cubesetup
 
-scoreboard players set @e[tag=cube,tag=cubespawn] cd 0
 execute as @e[tag=cubespawn] at @s run tp @s ~ 0 ~
 kill @e[tag=cubespawn]
 execute as @e[type=chicken] at @s run tp @s ~ 0 ~
