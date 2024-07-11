@@ -6,6 +6,14 @@
         "minecraft:stone_brick_slab",
         "minecraft:quartz_slab",
         "minecraft:red_sandstone_slab",
-        "minecraft:purpur_slab"
+        "minecraft:purpur_slab",
+         
+        "minecraft:oak_slab",
+        "minecraft:spruce_slab",
+        "minecraft:birch_slab",
+        "minecraft:jungle_slab",
+        "minecraft:acacia_slab",
+        "minecraft:dark_oak_slab",
+        "minecraft:petrified_oak_slab" 
     ]
 }

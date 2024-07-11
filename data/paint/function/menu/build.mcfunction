@@ -21,7 +21,7 @@ item replace entity @s inventory.14 with minecraft:nether_bricks
 item replace entity @s inventory.15 with minecraft:armor_stand[custom_model_data=1,item_name="{\"text\":\"Cube\",\"color\":\"gold\"}",entity_data={NoGravity:1b,Marker:1b,Invisible:1b,Tags:["cubespawn","levelsetup"],id:"armor_stand"}]
 
 item replace entity @s inventory.16 with minecraft:red_dye[item_name="{\"text\":\"Enemies\",\"color\":\"gold\"}"]
-item replace entity @s inventory.17 with minecraft:armor_stand[custom_model_data=2,item_name="{\"text\":\"Door [X]\",\"color\":\"gold\"}",entity_data={id:"armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["door","x","inv"]}]
+item replace entity @s inventory.17 with minecraft:armor_stand[custom_model_data=2,custom_data={id:"door",type:"x"},item_name="{\"text\":\"Door [X]\",\"color\":\"gold\"}",entity_data={id:"armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["door","x","inv"]}]
 
 item replace entity @s inventory.18 with minecraft:end_rod
 item replace entity @s inventory.19 with minecraft:smooth_stone_slab

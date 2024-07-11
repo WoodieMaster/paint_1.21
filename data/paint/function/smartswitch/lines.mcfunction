@@ -1,3 +1,5 @@
+execute if predicate paint:sneaking run return run function paint:smartswitch/lines_grayscale
+
 execute if items entity @s weapon.offhand minecraft:white_glazed_terracotta run return run item replace entity @s weapon.mainhand with minecraft:lapis_ore
 execute if items entity @s weapon.offhand minecraft:lapis_ore run return run item replace entity @s weapon.mainhand with minecraft:orange_glazed_terracotta
 execute if items entity @s weapon.offhand minecraft:orange_glazed_terracotta run return run item replace entity @s weapon.mainhand with minecraft:light_blue_glazed_terracotta
