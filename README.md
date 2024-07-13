@@ -14,9 +14,9 @@ The resourcepack is found [here](https://github.com/WoodieMaster/paint_1.21_Reso
 - To update to the newest version type `git pull`
 
 ## Branch structure
-- The Main branch is only updated when I am pretty sure the code is stable ;\)
-- The dev branch is holding the newest version with all the stuff that is currently in an okay state
-- Feature branches are branches where I am working on something (arent guaranteed to work)
+- The main branch is holding the newest version with all the stuff that is currently in an okay state
+- 'Feature' branches are branches where I am working on a new feature
+- 'Bug' branches are branches where I am trying to fix a bug
 
 ## Ideas or Issues
 If you have an Idea or found a bug, let me know either issues page on github or the Schmiscord discord channel (zuschauer-paintbox)
@@ -26,4 +26,3 @@ If you want to add your own code
 
 - guide for how to [contribute to github projects](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
 - Create a custom feature branch where all your new code goes
-- When opening the pull request, make sure to choose dev as the target branch!
